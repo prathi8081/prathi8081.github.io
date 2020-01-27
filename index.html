@@ -11,6 +11,42 @@
     <hr>
   <h3 style="color:green">Welcome to the world of Internet Programming . We have provided coverage for many Internet related topics.</h3>
   
+	
+<p align=center>
+<button  onclick="fun1('1')" >CurrentTime</button>
+<button  onclick="fun1('2')" >YesterdayTime</button>
+<button  onclick="fun1('3')" >10yearsback</button>
+<button  onclick="fun1('4')" >1weeklater</button>
+	</p>
+
+ <script type="text/javascript">
+ function fun1(num){
+ var cur=new Date();
+ var date=cur.getDate();
+ var mon=cur.getMonth();
+ var year=cur.getFullYear();
+ var hr=cur.getHours();
+ var min=cur.getMinutes();
+ var sec=cur.getSeconds();
+ var week=cur.getDay();
+ if(num==1){
+ alert("Time : "+hr+":"+min+":"+sec+" Date : "+date+":"+mon+":"+year);}
+ 
+ if(num==2){var date1=cur.getDate()-1;
+ alert("Time : "+hr+":"+min+":"+sec+" Date : "+date1+":"+mon+":"+year);}
+ 
+ if(num==3){var year1=cur.getFullYear()-10;
+ alert("Time : "+hr+":"+min+":"+sec+" Date : "+date+":"+mon+":"+year1);}
+ 
+ if(num==4){var week=cur.getDay();
+ alert("Day : "+week+"  Time : "+hr+":"+min+":"+sec+" Date : "+date+":"+mon+":"+year);}
+ 
+ 
+ }
+ </script>
+
+	
+	
   
   <table style="width:100%" border="1">
   <caption><strong>Internet and WWW</strong></caption>
@@ -60,6 +96,13 @@
 <audio controls>
   <source src="	qazi-anjummobile-shop03337206656-35545.mp3" type="audio/mpeg">
 </audio>
+	
+<video width="400" controls>
+  <source src="https://www.videvo.net/videvo_files/converted/2014_05/preview/Futuristic_3D_Numbers_Countdown_Seconds__Videvo.mov60689.webm" type="video/mp4">
+  
+  
+</video>
+
   <center>&copy; Prathibha</center>
 </body>
 </html>
