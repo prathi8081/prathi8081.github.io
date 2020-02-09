@@ -17,28 +17,8 @@
 	<button  onclick="fun1('3')" >10yearsback</button>
 	<button  onclick="fun1('4')" >1weeklater</button>
 </p>
-  
-<h2 style="color:Magenta" align=center>Click the Button to change Background Color</h2>
-<p align =center><button onClick="func('1')">BLUE</button>
-<button onClick="func('2')">GREEN</button>
-<button onClick="func('3')">ROSE</button>
-<button onClick="func('4')">GREY</button>
-</p>
-<script>
-function func(n){
-	if(n==1)
-    	document.body.style.background='Skyblue';
-    else if(n==2)
-    	document.body.style.background='Lime';
-    else if(n==3)
-    	document.body.style.background='MistyRose';
-    else if(n==4)
-    	document.body.style.background='DarkGrey';
-        }
-</script>
 
-
-
+	
  <script type="text/javascript">
  function fun1(num){
  var cur=new Date();
@@ -60,9 +40,31 @@ function func(n){
  
  if(num==4){var week=cur.getDay();
  alert("Day : "+week+"  Time : "+hr+":"+min+":"+sec+" Date : "+(date+7)+":"+mon+":"+year);}
- 
- 
  }
+	 
+	 
+<h2 style="color:Magenta" align=center>Click the Button to change Background Color</h2>
+<p align =center>
+<button onClick="func('1')">BLUE</button>
+<button onClick="func('2')">GREEN</button>
+<button onClick="func('3')">ROSE</button>
+<button onClick="func('4')">GREY</button>
+</p>
+<script>
+function func(n){
+	if(n==1)
+    	document.body.style.background='Skyblue';
+    else if(n==2)
+    	document.body.style.background='green';
+    else if(n==3)
+    	document.body.style.background='MistyRose';
+    else if(n==4)
+    	document.body.style.background='DarkGrey';
+        }
+</script>
+
+
+
  var radius=parseInt(window.prompt("Enter radius "));
 document.writeln("<h2>Diameter : "+(2*radius)+"<br>Circumference : "+(2*Math.PI*radius)+"<br>Area : "+(Math.PI*radius*radius)+"</h2>");
 </script>
