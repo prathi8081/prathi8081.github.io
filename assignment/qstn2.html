@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script type="text/javascript">
+	var i=0;var pos=0;var neg=0;var z=0;
+	while(i<3)
+	{
+		var num=window.prompt("Enter number : ");
+		var res=parseInt(num);
+		if(res>0)
+			pos=pos+1;
+		else if(res==0)
+			z=z+1;
+		else
+			neg=neg+1;
+		i=i+1;
+	}
+	document.writeln(pos +" positive numbers"+"</br>");
+	document.writeln(neg +" negative numbers"+"</br>");
+	document.writeln(z +" zeroes");
+	</script>
+</head>
+</html>
