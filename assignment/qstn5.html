@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script>
+        var ordinalDay; 
+        var cumulativeGift;
+        var gift;
+        var previousGifts;
+
+        document.write("<h1 style='text-decoration: underline'>The Twelve Days of Christmas</h1>")
+       for (var day=1; day<=12; day++){
+            document.write("<p>On the ");
+            switch(day){
+                case (1):
+                    ordinalDay = "first";
+                    gift = "partridge in a pear tree.";
+                    previousGifts = "and a " + gift;
+                    break;
+                case (2):
+                    ordinalDay = "second";
+                    gift = "Two turtle doves,";
+                    break;
+                case (3):
+                    ordinalDay = "third";
+                    gift = "Three French Hens,";
+                    break;
+                case (4):
+                    ordinalDay = "fourth";
+                    gift = "Four colly birds,";
+                    break;
+                case (5):
+                    ordinalDay = "fifth";
+                    gift = "Five gold rings,";
+                    break;
+                case (6):
+                    ordinalDay = "sixth";
+                    gift = "Six geese a laying,";
+                    break;
+                case (7):
+                    ordinalDay = "seventh";
+                    gift = "Seven swans a swimming,";
+                    break;
+                case (8):
+                    ordinalDay = "eighth";
+                    gift = "Eight maids a milking,";
+                    break;
+                case (9):
+                    ordinalDay = "ninth";
+                    gift = "Nine ladies dancing,";
+                    break;
+                case (10):
+                    ordinalDay = "tenth";
+                    gift = "Ten lords a leaping,";
+                    break;
+                case (11):
+                    ordinalDay = "eleventh";
+                    gift = "Eleven pipers piping,";
+                    break;
+                case (12):
+                    ordinalDay = "twelfth";
+                    gift = "Twelve drummers drumming,";
+                    break;
+                default:
+                    break;
+            }
+            if (day == 1){
+                cumulativeGift = "A " + gift;
+            }
+            else {
+                // The latest gift is the current gift plus all previous day's gifts
+                cumulativeGift = gift + "<br>" + previousGifts;
+
+                // Update previous gifts now to contain all gifts
+                previousGifts = cumulativeGift;
+            }
+            // Print out the first line plus the accumulation of all gifts
+            document.write(ordinalDay + "</span> day of Christmas<br>my true love sent to me:<br>" + cumulativeGift + "<br>");
+        }
+    </script>
+</head>
+</html>
